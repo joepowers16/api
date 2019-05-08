@@ -1,6 +1,13 @@
 #' Overview: learning to call API from RStudio
 #' Date: 2019-05-08
 #' Author: JP
+#' 
+#' Overview: 
+#' APIs can be easily accessde from RStudio using the httr package.
+#' APIs will usually supply their data in json format which will need to be 
+#' transformed into dataframes via jsonlite package. 
+
+
 
 # code from https://tophcito.blogspot.com/2015/11/accessing-apis-from-r-and-little-r.html
 
@@ -106,7 +113,7 @@ class(finalResult)
 
 head(finalResult)
 
-# Working with Dates ####
+# Working with dates ####
 date.character <- "1981-05-02"
 date.POSIXct <- ymd(date.character)
 
